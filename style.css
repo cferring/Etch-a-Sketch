@@ -1,0 +1,163 @@
+/* FOOTER */
+.footer {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+  
+.fa-github {
+    color: var(--primary-dark);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+/* MAIN + grid*/
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: #c0d5f2;
+    line-height: 1.6;
+    /* footer support */
+    margin-bottom: 100px;
+}
+
+.main {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grid {
+    /* border: 1px solid blue; */
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    /* FOR SKETCH PAD LOOK */
+    margin: 50px;
+    border: 10px inset rgb(237, 132, 132);
+}
+
+.grid-element {
+    background-color: white;
+    user-select: none;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+.grid-element:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* Menu/Settings */
+.menu {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 200px;
+}
+
+.size-value {
+    margin-bottom: -20px;
+    font-size: 20px;
+}
+
+input[type='color'] {
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input[type='color']:hover {
+    transform: scale(1.15);
+}
+
+input[type='range'] {
+    /* transform: scale(1.15); */
+    background-color: rgb(145, 163, 197);
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(145, 163, 197);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(110, 123, 147);
+    transform: scale(1.15);
+}
+
+/* Etch-a-sketch styling */
+.sketch-pad {
+    background-color: rgb(243, 63, 63);
+    border: 30px outset rgb(230, 104, 104);
+    /* width: 600px; */
+    /* padding-bottom: 75px; */
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 10px;
+}
+
+.knobs {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    margin-top: -25px;
+}
+.knob {
+    height: 75px;
+    width: 75px;
+    background-color: rgb(236, 231, 231);
+    border: 5px outset #ffffff;
+    border-radius: 50%;
+  }
+

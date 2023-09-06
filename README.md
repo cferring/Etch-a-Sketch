@@ -1,3 +1,4 @@
 # Etch-a-Sketch
 Etch-a-Sketch Pixel-Art Project
-🎨 [Click here for Demo!]([url](https://cferring.github.io/Etch-a-Sketch/)https://cferring.github.io/Etch-a-Sketch/)
+
+🎨 [Click here for the Demo!](https://cferring.github.io/Etch-a-Sketch/)
